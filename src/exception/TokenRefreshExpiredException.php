@@ -1,7 +1,7 @@
 <?php
 
 
-namespace bdhert\JwtAuth\exception;
+namespace xiuxin\JwtAuth\exception;
 
 /**
  * Token 刷新已过期.

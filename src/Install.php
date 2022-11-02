@@ -1,6 +1,6 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
 class Install
 {
@@ -10,7 +10,7 @@ class Install
      * @var array
      */
     protected static $pathRelation = array(
-        'config/plugin/bdhert/jwt-auth' => 'config/plugin/bdhert/jwt-auth',
+        'config/plugin/xiuxin/jwt-auth' => 'config/plugin/xiuxin/jwt-auth',
     );
 
     /**

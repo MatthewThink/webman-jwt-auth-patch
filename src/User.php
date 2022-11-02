@@ -1,9 +1,9 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
-use bdhert\JwtAuth\exception\TokenInvalidException;
-use bdhert\JwtAuth\user\AuthorizationUserInterface;
+use xiuxin\JwtAuth\exception\TokenInvalidException;
+use xiuxin\JwtAuth\user\AuthorizationUserInterface;
 
 class User
 {
@@ -18,7 +18,7 @@ class User
         if ($class instanceof AuthorizationUserInterface) {
             $this->model = $class;
         } else {
-            throw new TokenInvalidException('must be implements bdhert\JwtAuth\user\AuthorizationUserInterface', 500);
+            throw new TokenInvalidException('must be implements xiuxin\JwtAuth\user\AuthorizationUserInterface', 500);
         }
     }
 

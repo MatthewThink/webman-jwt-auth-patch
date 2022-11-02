@@ -1,13 +1,13 @@
 <?php
 
-namespace bdhert\JwtAuth\middleware;
+namespace xiuxin\JwtAuth\middleware;
 
 use Webman\MiddlewareInterface;
 use Webman\Http\Response;
 use Webman\Http\Request;
-use bdhert\JwtAuth\exception\JwtException;
-use bdhert\JwtAuth\handle\RequestToken;
-use bdhert\JwtAuth\facade\JwtAuth;
+use xiuxin\JwtAuth\exception\JwtException;
+use xiuxin\JwtAuth\handle\RequestToken;
+use xiuxin\JwtAuth\facade\JwtAuth;
 
 class JwtAuthMiddleware implements MiddlewareInterface {
     public function process(Request $request, callable $next, array $params = []): Response {

@@ -1,6 +1,6 @@
 <?php
 
-namespace bdhert\JwtAuth\handle;
+namespace xiuxin\JwtAuth\handle;
 
 class Header extends RequestToken
 {

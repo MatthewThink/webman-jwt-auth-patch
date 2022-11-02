@@ -1,6 +1,6 @@
 <?php
 
-namespace bdhert\JwtAuth\exception;
+namespace xiuxin\JwtAuth\exception;
 
 /**
  * Token 已在其它终端登录.

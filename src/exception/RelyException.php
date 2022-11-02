@@ -1,9 +1,9 @@
 <?php
-namespace bdhert\JwtAuth\exception;
+namespace xiuxin\JwtAuth\exception;
 
 /**
  * 内部依赖错误
  * Class RelyException
- * @package bdhert\JwtAuth\exception
+ * @package xiuxin\JwtAuth\exception
  */
 class RelyException extends JwtException {}

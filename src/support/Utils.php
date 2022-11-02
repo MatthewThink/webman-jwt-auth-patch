@@ -1,6 +1,6 @@
 <?php
 
-namespace bdhert\JwtAuth\support;
+namespace xiuxin\JwtAuth\support;
 
 use Carbon\Carbon;
 

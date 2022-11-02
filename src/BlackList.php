@@ -1,18 +1,18 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
 use Lcobucci\JWT\Token\Plain;
 use Lcobucci\JWT\Token\RegisteredClaims;
 use support\Redis;
-use bdhert\JwtAuth\support\Utils;
+use xiuxin\JwtAuth\support\Utils;
 use Illuminate\Redis\Connections\PhpRedisConnection;
-use bdhert\JwtAuth\exception\RelyException;
+use xiuxin\JwtAuth\exception\RelyException;
 
 /**
  * token状态控制
  * Class BlackList
- * @package bdhert\JwtAuth
+ * @package xiuxin\JwtAuth
  */
 class BlackList {
     protected $prefix;

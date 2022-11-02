@@ -1,12 +1,12 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
 use Lcobucci\JWT\Token;
-use bdhert\JwtAuth\exception\JwtException;
-use bdhert\JwtAuth\exception\TokenInvalidException;
-use bdhert\JwtAuth\support\Utils;
-use bdhert\JwtAuth\user\AuthorizationUserInterface;
+use xiuxin\JwtAuth\exception\JwtException;
+use xiuxin\JwtAuth\exception\TokenInvalidException;
+use xiuxin\JwtAuth\support\Utils;
+use xiuxin\JwtAuth\user\AuthorizationUserInterface;
 
 class JwtAuth
 {
@@ -93,7 +93,7 @@ class JwtAuth
         } else {
             $this->store = $this->getDefaultApp();
         }
-        $options = config('plugin.bdhert.jwt-auth.app.stores.' . $this->store);
+        $options = config('plugin.xiuxin.jwt-auth.app.stores.' . $this->store);
 
         if (!empty($options)) {
             return new Config($options);
@@ -108,7 +108,7 @@ class JwtAuth
      */
     public function getManager(): Manager
     {
-        $options = config('plugin.bdhert.jwt-auth.app.manager') ?? [];
+        $options = config('plugin.xiuxin.jwt-auth.app.manager') ?? [];
         return new Manager($options);
     }
 

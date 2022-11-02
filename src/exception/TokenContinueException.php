@@ -1,5 +1,5 @@
 <?php
-namespace bdhert\JwtAuth\exception;
+namespace xiuxin\JwtAuth\exception;
 
 use Symfony\Component\HttpFoundation\Response;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
 use Lcobucci\JWT\Signer\Ecdsa\Sha256 as ES256;
 use Lcobucci\JWT\Signer\Ecdsa\Sha384 as ES384;
@@ -17,9 +17,9 @@ use Lcobucci\JWT\Signer;
 use Lcobucci\JWT\Signer\Rsa\Sha256 as RS256;
 use Lcobucci\JWT\Signer\Rsa\Sha384 as RS384;
 use Lcobucci\JWT\Signer\Rsa\Sha512 as RS512;
-use bdhert\JwtAuth\event\EventHandler;
-use bdhert\JwtAuth\exception\JwtException;
-use bdhert\JwtAuth\exception\TokenInvalidException;
+use xiuxin\JwtAuth\event\EventHandler;
+use xiuxin\JwtAuth\exception\JwtException;
+use xiuxin\JwtAuth\exception\TokenInvalidException;
 
 class Config
 {
@@ -275,7 +275,7 @@ class Config
     /**
      * 获取事件
      *
-     * @return \bdhert\JwtAuth\event\EventHandler|null
+     * @return \xiuxin\JwtAuth\event\EventHandler|null
      */
     public function getEventHandler()
     {

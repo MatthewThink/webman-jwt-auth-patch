@@ -1,20 +1,20 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
-use bdhert\JwtAuth\exception\HasLoggedException;
+use xiuxin\JwtAuth\exception\HasLoggedException;
 use Lcobucci\JWT\Configuration;
 use Lcobucci\JWT\Token;
 use DateTimeImmutable;
 use Exception;
 use Lcobucci\JWT\Validation\Constraint\IdentifiedBy;
 use Lcobucci\JWT\Validation\Constraint\SignedWith;
-use bdhert\JwtAuth\Exception\JwtException;
-use bdhert\JwtAuth\exception\TokenExpiredException;
-use bdhert\JwtAuth\exception\TokenInvalidException;
-use bdhert\JwtAuth\exception\TokenRefreshExpiredException;
-use bdhert\JwtAuth\exception\TokenContinueException;
-use bdhert\JwtAuth\support\Utils;
+use xiuxin\JwtAuth\Exception\JwtException;
+use xiuxin\JwtAuth\exception\TokenExpiredException;
+use xiuxin\JwtAuth\exception\TokenInvalidException;
+use xiuxin\JwtAuth\exception\TokenRefreshExpiredException;
+use xiuxin\JwtAuth\exception\TokenContinueException;
+use xiuxin\JwtAuth\support\Utils;
 
 class Jwt
 {

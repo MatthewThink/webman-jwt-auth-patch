@@ -1,9 +1,9 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
 class Manager {
-    protected $blacklist_prefix       = 'bdhert';
+    protected $blacklist_prefix       = 'xiuxin';
     protected $blacklist_enabled      = false;
     protected $blacklist_grace_period = 0;
     protected $automatic_tips         = 'token已续签';

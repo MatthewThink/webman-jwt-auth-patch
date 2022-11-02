@@ -1,6 +1,6 @@
 <?php
 
-namespace bdhert\JwtAuth\exception;
+namespace xiuxin\JwtAuth\exception;
 
 class TokenInvalidException extends JwtException
 {

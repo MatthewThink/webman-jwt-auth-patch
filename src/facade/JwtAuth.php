@@ -1,11 +1,11 @@
 <?php
 
-namespace bdhert\JwtAuth\facade;
+namespace xiuxin\JwtAuth\facade;
 
 
 /**
- * @see \bdhert\JwtAuth\JwtAuth
- * @mixin \bdhert\JwtAuth\JwtAuth
+ * @see \xiuxin\JwtAuth\JwtAuth
+ * @mixin \xiuxin\JwtAuth\JwtAuth
  * @method static token($id, array $cliams) 生成 Token
  * @method static verify($token) 检测Token合法性
  * @method static refresh() 刷新Token 返回新Token
@@ -26,7 +26,7 @@ class JwtAuth
     {
         $app = \request()->app ?? 'default';
         if (!isset(static::$_instance[$app])) {
-            static::$_instance[$app] = new \bdhert\JwtAuth\JwtAuth($app);
+            static::$_instance[$app] = new \xiuxin\JwtAuth\JwtAuth($app);
         }
         return static::$_instance[$app];
     }

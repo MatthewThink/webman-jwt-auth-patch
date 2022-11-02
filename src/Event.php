@@ -1,9 +1,9 @@
 <?php
 
-namespace bdhert\JwtAuth;
+namespace xiuxin\JwtAuth;
 
-use bdhert\JwtAuth\event\EventHandler;
-use bdhert\JwtAuth\exception\TokenInvalidException;
+use xiuxin\JwtAuth\event\EventHandler;
+use xiuxin\JwtAuth\exception\TokenInvalidException;
 
 class Event
 {
@@ -19,7 +19,7 @@ class Event
             if ($class instanceof EventHandler) {
                 $this->handle = $class;
             } else {
-                throw new TokenInvalidException('must be implements bdhert\JwtAuth\event\EventHandler',500);
+                throw new TokenInvalidException('must be implements xiuxin\JwtAuth\event\EventHandler',500);
             }
         }
     }

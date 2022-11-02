@@ -1,6 +1,6 @@
 <?php
 
-namespace bdhert\JwtAuth\user;
+namespace xiuxin\JwtAuth\user;
 
 interface AuthorizationUserInterface
 {

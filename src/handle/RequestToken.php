@@ -1,8 +1,8 @@
 <?php
 
-namespace bdhert\JwtAuth\handle;
+namespace xiuxin\JwtAuth\handle;
 
-use bdhert\JwtAuth\exception\JwtException;
+use xiuxin\JwtAuth\exception\JwtException;
 
 class RequestToken
 {
@@ -29,7 +29,7 @@ class RequestToken
 
         foreach ($handles as $handle) {
             if (in_array($handle, $this->handles)) {
-                $namespace = '\\bdhert\\JwtAuth\\handle\\' . $handle;
+                $namespace = '\\xiuxin\\JwtAuth\\handle\\' . $handle;
                 $token     = (new $namespace())->handle();
                 if ($token) {
                     $this->token = $token;
